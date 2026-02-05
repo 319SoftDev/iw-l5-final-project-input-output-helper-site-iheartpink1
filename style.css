@@ -10,7 +10,7 @@ header{
 text-align: center;
 }
 
-hidden {
+.hidden {
    display: none;
 }
 
@@ -18,12 +18,25 @@ hidden {
   position: relative;
   display: inline-block;
   padding: 2%;
+ 
+}
+.button{
+   background-color: rgb(43, 43, 43);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
-.img-container:hover .hover-box {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+.img-gif {
+  position:absolute;
+  bottom:750px;
+  left:900px;
 }
 
 .img-container img {
@@ -32,8 +45,15 @@ hidden {
   margin: 10px;
 }
 
-.img-container:hover img {
+.img-posters:hover  {
   transform: scale(1.08);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+
+}
+
+.img-green {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(0, 151, 13, 0.6);
   cursor: pointer;
 }
