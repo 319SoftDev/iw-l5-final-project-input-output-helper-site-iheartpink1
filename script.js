@@ -12,6 +12,9 @@ const twilight = document.querySelector("#twilight");
 
 const caption = document.querySelector("#caption");
 
+const reset = document.querySelector("#reset");
+const calculate = document.querySelector("#calculate");
+
 const arcanegif = document.querySelector("#arcanegif");
 const castlevaniagif = document.querySelector("#castlevaniagif");
 const crimsonpeakgif = document.querySelector("#crimsonpeakgif");
@@ -79,7 +82,6 @@ const castlevaniaclick= () => {
     nosferatugif.classList.add("hidden")
     ptogif.classList.add("hidden")
     twilightgif.classList.add("hidden")
-
     castlevania.classList.add("img-green")
 }
 
@@ -242,7 +244,7 @@ const twilightclick= () => {
         counter();
     }
     tw = true;
- arcanegif.classList.add("hidden")
+    arcanegif.classList.add("hidden")
     castlevaniagif.classList.add("hidden")
     crimsonpeakgif.classList.add("hidden")
     dextergif.classList.add("hidden")
@@ -255,4 +257,56 @@ const twilightclick= () => {
     twilightgif.classList.remove("hidden")
     twilight.classList.add("img-green")
     }
+
 twilight.addEventListener("click", twilightclick);
+
+const resetclick= () => {
+    arcanegif.classList.add("hidden")
+    castlevaniagif.classList.add("hidden")
+    crimsonpeakgif.classList.add("hidden")
+    dextergif.classList.add("hidden")
+    draculagif.classList.add("hidden")
+    hannibalgif.classList.add("hidden")
+    iwavgif.classList.add("hidden")
+    nosferatugif.classList.add("hidden")
+    ptogif.classList.add("hidden")
+    twilightgif.classList.add("hidden")
+
+    arcane.classList.remove("img-green")
+    castlevania.classList.remove("img-green")
+    crimsonpeak.classList.remove("img-green")
+    dexter.classList.remove("img-green")
+    dracula.classList.remove("img-green")
+    hannibal.classList.remove("img-green")
+    iwav.classList.remove("img-green")
+    nosferatu.classList.remove("img-green")
+    pto.classList.remove("img-green")
+    twilight.classList.remove("img-green")
+    caption.classList.add("hidden")
+    }
+reset.addEventListener("click", resetclick);
+
+const calculateclick= () => {
+      if (count == 5){
+        caption.classList.remove("hidden")
+    }
+
+      if (count > 5){
+        caption.classList.remove("hidden")
+    }
+
+      if (count < 5){
+        caption.classList.remove("hidden")
+    }
+    arcanegif.classList.add("hidden")
+    castlevaniagif.classList.add("hidden")
+    crimsonpeakgif.classList.add("hidden")
+    dextergif.classList.add("hidden")
+    draculagif.classList.add("hidden")
+    hannibalgif.classList.add("hidden")
+    iwavgif.classList.add("hidden")
+    nosferatugif.classList.add("hidden")
+    ptogif.classList.add("hidden")
+    twilightgif.classList.add("hidden")
+}
+     calculate.addEventListener("click", calculateclick);
