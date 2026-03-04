@@ -1,0 +1,59 @@
+body{
+    background-color:#c4c3c0;
+}
+
+header{
+    text-align: center;
+}
+
+.center{
+text-align: center;
+}
+
+.hidden {
+   display: none;
+}
+
+.img-container {
+  position: relative;
+  display: inline-block;
+  padding: 2%;
+ 
+}
+.button{
+  background-color: rgb(43, 43, 43);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.img-gif {
+  position:absolute;
+  bottom:750px;
+  left:900px;
+}
+
+.img-container img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.img-posters:hover  {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+
+}
+
+.img-green {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(0, 151, 13, 0.6);
+  cursor: pointer;
+}
