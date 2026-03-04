@@ -11,6 +11,9 @@ const pto = document.querySelector("#pto");
 const twilight = document.querySelector("#twilight");
 
 const caption = document.querySelector("#caption");
+const caption2 = document.querySelector("#caption2");
+const caption3 = document.querySelector("#caption3");
+
 
 const reset = document.querySelector("#reset");
 const calculate = document.querySelector("#calculate");
@@ -283,6 +286,21 @@ const resetclick= () => {
     pto.classList.remove("img-green")
     twilight.classList.remove("img-green")
     caption.classList.add("hidden")
+    caption2.classList.add("hidden")
+    caption3.classList.add("hidden")
+    ac = false;
+    ca = false;
+    cp = false;
+    de = false;
+    dr = false;
+    ha = false;
+    it = false;
+    no = false;
+    pt = false;
+    tw = false;
+
+    count = 0
+    console.log(count)
     }
 reset.addEventListener("click", resetclick);
 
@@ -292,11 +310,11 @@ const calculateclick= () => {
     }
 
       if (count > 5){
-        caption.classList.remove("hidden")
+        caption3.classList.remove("hidden")
     }
 
       if (count < 5){
-        caption.classList.remove("hidden")
+        caption2.classList.remove("hidden")
     }
     arcanegif.classList.add("hidden")
     castlevaniagif.classList.add("hidden")
